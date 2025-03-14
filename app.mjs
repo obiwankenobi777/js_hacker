@@ -1,3 +1,6 @@
-import { hello } from './modulo.mjs';
+#!/usr/bin/env node
 
-console.log(hello('Francisco Ian Soares de Araujo'));
+import { circleArea as circle, squareArea as square } from './foo.mjs';
+
+console.log(circle(2));
+console.log(square(2));
