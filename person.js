@@ -1,9 +1,12 @@
 class Person {
     constructor(name, age) {
-        this.name = name;
-        this.age = age;
+        this._name = name;
+        this._age = age;
     }
-    get() {
-        console.log(`Name: ${this.name}\nAge: ${this.age}`);
+    get name() {
+        return this._name;
+    }
+    get age() {
+        return this._age;
     }
 }
